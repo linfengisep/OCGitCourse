@@ -88,3 +88,31 @@ facile à chiffrer,à configurer, pas limite de place
 structure s3?
 bucket, inside Object
 seaux,objets à l'intérieur
+
+
+Résumé O:
+EC2:
+1.Gestion des serveurs sous forme de machines virtuelles dans le cloud,
+2.Hébergement du site web.
+3.Pilotage à distance. Outil:fileZilla pour contrôle à distance.
+
+RDS:
+Plutôt que d'installer et configurer vous-mêmes le serveur de base de données, vous commandez un serveur spécifique et optimisé pour votre base de données.
+avantages:
+pas la peine installer le logiciel
+pas la peine de configurer le moteur de base de donnée.
+pas la peine de choisir le matériel de nos serveurs.
+La sauvegarde et restauration rapides
+Plusieurs BD en réplication.
+
+par exemple,
+MySQL workbench
+
+S3:
+un service de stockage de donnée. un gros hébergeur de fichiers.
+
+avantages:
+configurer les droits d'accès pour chaque fichiers.
+chiffrer le fichier/peuvent être versionné
+répliquer les fichiers sur plusieurs datacenters.
+pas de limite de places.(payant).
