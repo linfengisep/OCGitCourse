@@ -1,0 +1,16 @@
+List vs Set vs Map
+
+Three interface
+
+List:orderd, duplicate is ok,>1 null,
+Set:no order, no duplicate, only one null,
+Map:based on key-value, key always unique, may be duplicate value; one null key, >1 null value
+
+when(need collection){
+Case 1: you frequently access element with index, choose the implementation of List like ArrayList, LinkedList;
+Case 2: element is unique, no order is required, then choose the implementation of Set like HashSet, TreeSet;
+Case 3: need collection with mapping between key and value, then choose the implementation of Map like HashMap, Hashtable;
+
+Note:
+Hashtable: no null key neither null value
+HashMap: one null key, more than one null value is possible,not synchronised
