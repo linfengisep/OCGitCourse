@@ -1,0 +1,90 @@
+///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*****************************chapitre1.1***********************************
+*AWS
+**À quoi ça sert ? A la base, AWS permet d'héberger des sites web sur des serveurs. Mais aujourd'hui, ça va plus loin : AWS nous aide à créer nos applications !
+
+**Cloud?
+**la naissance du Cloud;
+à l'époc 2002, Amazon a installé beaucoup de datacenter pour répondre le besoin pendant le pic de de vente comme noël,après les ingénieurs ont l'idée de louer le service comme calcul et stockage pour dévellopeur web.
+
+**pourquoi cloud?
+L’intérêt de ce fonctionnement, c’est que vous n’avez plus à vous préoccuper des problèmes physiques des machine.(ingénieur amazon gèrent tous les problèmes.)
+*****************************chapitre1.2***********************************
+**trois type de cloud?
+iaas:infrastructure as a service; nous pouvons louer quelque service.
+paas:plateform as a servie; il fournit non seulement un accès à l'infrastucture, mais aussi il s'occupe de gérer le nombre de machine pour que notre application fonctionne quelle que soit la charge de trafic.
+
+saas:software as a service;il nous fournit l'accès à un logiciel sous forme de service: google docs.(pas installer une app dans ma machine)
+
+**avantages?
+commence gratuitement.
+régulation automatique du trafic.
+résolutions des problèmes techniques par Amazon
+
+**désavantage
+adapter notre sites
+coût pour sortir du cloud(recoder pour certain site)
+parfois, quelque bugs.
+
+*****************************chapitre1.3***********************************
+Amazon est le premier et occupe un grand partie de marché par rapport IBM et Google et MicroSoft.
+trois services essentielles:
+*EC2:Elastic compute cloud(EC2)
+il permet de prendre des service de serveur pour héberger notre site.
+il gère des serveurs sous forme de machines virtuelles dans le cloud. nous avons l'accès à la ligne de commande.
+
+*RDS:relational database service (RDS)
+il met à notre disposition un serveur de base de donnée préconfiguré. nous n'avons pas accès à la ligne de commande.
+
+*Simple storage service(S3)
+un service de stockage et de distributions de fichiers.
+Utilisez le pour faire télécharger des fichiers sur notre site ou y stocker des images.
+
+l'autre comme
+lambda:exécution du code sans serveur.
+API Gatewey:créer des API
+
+
+EC2(élastique compute cloud)
+**C'est un moyen de lancer des serveurs,On dit "élastique" car il est possible d'en ajouter et d'en enlever en fonction de vos besoins
+**usage: héberger un site web; permet de le fonctionnement d'app mobile
+**instance:la page instances affiche la liste des serveurs que vous faite tourner.
+**ami: amazon machine image:(image de nos instances)
+On se sert souvent d'un AMI au départ pour lancer un serveur EC2 préconfiguré
+**EBS(elastic block store):Volumes:afficher tous les disques durs utilisé.
+
+**type de l'instance
+https://aws.amazon.com/fr/ec2/instance-types/
+usage générale: privilégier ni le processeur ni la mémoire vive ni le disque dur.
+calcul optimisé:monstre de calcul
+mémoire optimisé:ont beaucoup de mémoire vive
+
+**lancer une instance
+envoyer des fichiers en SFTP
+c'est le FTP en ssh.
+
+2.6 fixer IP
+associer un elastique ip
+
+2.7 sauvegarde à serveur
+deux méthode à choisir:
+1.AMI:le plus facile, tous le disque et toute la configuration sont copie.
+2.instantané EBS:le plus éconimique.
+
+
+**Chapitre 3 RDS(relational database service)
+
+**Chapitre 4 S3
+gros hébergeur des fichiers
+S3 = FTP?
+->:non,
+payant?
+->gratuit au début, 5Go
+
+avantages?
+fichiers peut être visionnée
+facile à chiffrer,à configurer, pas limite de place
+
+structure s3?
+bucket, inside Object
+seaux,objets à l'intérieur
