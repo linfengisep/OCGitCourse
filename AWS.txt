@@ -116,3 +116,26 @@ configurer les droits d'accès pour chaque fichiers.
 chiffrer le fichier/peuvent être versionné
 répliquer les fichiers sur plusieurs datacenters.
 pas de limite de places.(payant).
+
+
+
+**Résumé Simple:******
+Amazon fournit des énoremes de services.C'est impossible de tout maîtriser.
+Il y a quand même quelques services principaux incontournables qu'il faut connaître:EC2,RDS,S3.
+
+Compétence acquis:
+EC2:Elastic Compute Cloud:Hébergement du site web dans un serveur lancé sur EC2.
+->lancement de l'instance EC2;
+->Gestion du serveur à distance avec l'aide du logiciel FileZilla.
+->Hébergement du site web.
+->La sauvegardes et des restaurations du serveurs AWS.
+
+RDS:Relatinal Database Service:Gestion de la base de donnée Amazon RDS par exemple MySQL.
+->Lancement de l'instance RDS.
+->Configurations de l'instance RDS.
+->Connexion de l'instance RDS depuis la machine avec MySQL Workbench;
+
+S3:Simple Storage Service:Gestion de stockage de données.
+->Configurations les droits d'accès à S3.
+->Téléchargement des fichiers vers site web hébergé dans instance EC2.
+
